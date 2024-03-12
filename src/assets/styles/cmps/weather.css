@@ -1,6 +1,9 @@
 .weather {
     display: flex;
-    background-color: green;
+    justify-content: center;
+    align-items: center;
+    margin-inline-end: 30px;
+    background-color: white;
 }
 
 .temperature {

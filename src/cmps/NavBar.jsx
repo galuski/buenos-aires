@@ -1,26 +1,34 @@
-// import { Weather } from "./Weather";
-import { Link } from "react-router-dom"
+import { Weather } from "./Weather";
+import { useState } from "react"
+import { Link, NavLink } from "react-router-dom"
 export function Navbar() {
-
+    const [menuOpen, setMenuOpen] = useState(false)
     return (
-        <nav className="navbar">
-            <ul>
+        <nav>
+
+            <ul className={menuOpen ? "open" : ""}>
                 <li>
-                    <Link to="/"><img src="./home_page_logo.svg" alt="Logo" /></Link>
+                    <NavLink to="/what-to-do">מה לעשות</NavLink>
                 </li>
                 <li>
-                    <Link to="/what-to-do">מה לעשות</Link>
+                    <NavLink to="/nechita-raka">נחיתה רכה</NavLink>
                 </li>
                 <li>
-                    <Link to="/nechita-raka">נחיתה רכה</Link>
+                    <NavLink to="/information">מידע</NavLink>
                 </li>
                 <li>
-                    <Link to="/information">מידע</Link>
-                </li>
-                <li>
-                    <Link to="/contact">צור קשר</Link>
+                    <NavLink to="/contact">צור קשר</NavLink>
                 </li>
             </ul>
+            <div className="menu" onClick={() => {
+                setMenuOpen(!menuOpen)
+            }}>
+                <img src="./icons/menu.svg" alt="menu" />
+            </div>
+            <div className="logo">
+                <Weather />
+                <Link to="/" ><img src="./home_page_logo.svg" alt="Logo" /></Link>
+            </div>
         </nav>
     )
 

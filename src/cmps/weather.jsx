@@ -21,12 +21,13 @@ export function Weather() {
         <div className="weather">
             {weatherData && (
                 <>
-                    <img
-                        className="weather-icon"
-                        src={`./weather-icons/${weatherData.weather[0].icon}.svg`}
-                        alt={weatherData.weather[0].description}
-                    />
-                    <span className="temperature">{Math.round(weatherData.main.temp)}°C</span>
+                    <div className='weather-icon'>
+                        <img
+                            src={`./weather-icons/${weatherData.weather[0].icon}.svg`}
+                            alt={weatherData.weather[0].description}
+                        />
+                    </div>
+                    <div className="temperature">{Math.round(weatherData.main.temp)}°C</div>
                 </>
             )}
         </div>

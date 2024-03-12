@@ -1,6 +1,8 @@
-export function Information(){
+export function Information() {
 
-    return(
-        <h2>Information</h2>
+    return (
+        <section className="information">
+            <h2>Information</h2>
+        </section>
     )
 }

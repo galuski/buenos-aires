@@ -1,6 +1,8 @@
-export function Contact(){
+export function Contact() {
 
-    return(
-        <h2>Contact</h2>
+    return (
+        <section className="contact">
+            <h2>Contact</h2>
+        </section>
     )
 }

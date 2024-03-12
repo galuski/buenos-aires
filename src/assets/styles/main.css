@@ -1,3 +1,10 @@
+/* Views */
+@import "views/HomePage.css";
+@import "views/WhatToDo.css";
+@import "views/NechitaRaka.css";
+@import "views/Information.css";
+@import "views/Contact.css";
+
 /* Components */
 @import "cmps/Navbar.css";
 @import "cmps/Weather.css";
