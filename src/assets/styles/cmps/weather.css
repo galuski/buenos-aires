@@ -1,0 +1,11 @@
+.weather {
+    display: flex;
+    background-color: green;
+}
+
+.temperature {
+    font-family: Raleway !important;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
