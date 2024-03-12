@@ -1,11 +1,11 @@
 import './App.css'
 import './assets/styles/main.css'
-import Weather from './cmps/weather'
+import { NavBar } from './cmps/NavBar'
 
 function App() {
 
   return (
-    <Weather />
+    <NavBar />
   )
 }
 
