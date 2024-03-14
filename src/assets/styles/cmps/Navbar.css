@@ -1,6 +1,6 @@
-.active {
+/* .active {
     color: #FFBC00;
-}
+} */
 
 nav {
     display: flex;
@@ -34,9 +34,13 @@ nav ul li a {
     margin: 0.5rem;
 }
 
-nav ul li a:not(.active):hover {
-    color: #ffbb00a1;
+nav ul li a:hover {
+    text-decoration: underline;
 }
+
+/* nav ul li a:not(.active):hover {
+    color: #ffbb00a1;
+} */
 
 nav .menu {
     display: none;
@@ -84,5 +88,9 @@ nav .menu {
     nav ul li a {
         margin: 0.2rem 0.5rem;
         color: white;
+    }
+
+    nav ul li a:hover {
+        text-decoration: none;
     }
 }
